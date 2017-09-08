@@ -18,22 +18,22 @@ function printComment(objt) {
     divGen.appendChild(panelcomment);
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     var comentarios = [];
 
-    if(!localStorage.currenData){ //puede ser cambiado a sessionStorage
+    if (!localStorage.currenData) { //puede ser cambiado a sessionStorage
         localStorage.currenData = []; //puede ser cambiado a sessionStorage
-    }else{
+    } else {
         comentarios = JSON.parse(localStorage.currenData); //puede ser cambiado a sessionStorage
     }
 
-    for(var i=0; i<comentarios.length; i++){
+    for (var i = 0; i < comentarios.length; i++) {
         printComment(comentarios[i]);
     }
 
-    $("#comment").click(function(){
-        var objMessage ={
-            "name":$("#name").val(),
+    $("#comment").click(function () {
+        var objMessage = {
+            "name": $("#name").val(),
             "message": $("#message").val()
         };
         comentarios.push(objMessage);
@@ -41,5 +41,11 @@ $(document).ready(function(){
         printComment(objMessage);
         $("#name").val("");
         $("#message").val("");
+    });
+
+    $("#clean").click(function () {
+        localStorage.clear();
+        $("#ale").empty();
+
     });
 });
