@@ -1,0 +1,46 @@
+body{
+     background: #77302e;
+}
+
+#usuario{
+    margin: 60px 50px 0px 50px;
+    background: white;
+}
+#seccionComment{
+    background: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+}
+
+#clave{
+    width: 260px;
+}
+#global {
+    margin-top: 15px;
+    margin-right: 5px;
+	height: 200px;
+	width: auto;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+.mensajes {
+	height: auto;
+}
+.texto {
+	padding:4px;
+	background:#fff;
+}
+#ale{
+    font-family: 'Indie Flower', cursive;
+}
+
+.panel-primary>.panel-heading{
+    background-color:  #841b1b;
+    border-color: #333;
+}
+.col{
+   
+   border-color: #333;
+}
